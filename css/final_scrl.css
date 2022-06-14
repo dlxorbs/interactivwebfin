@@ -1,0 +1,105 @@
+
+.Zoom{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.section{
+    width: 100%;
+    height: 3748px;
+    /* overflow: hidden; */
+}
+
+.fontcon{
+
+    width: 980px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.titlewrapper{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    padding-top: 216px;
+    max-width: 100%;
+    z-index: 1;
+    opacity: 1;
+    /* transition: 1s; */
+}
+.zoomTitle{
+    color: #1d1d1f;
+    word-break: keep-all;
+    font-size: 40px;
+padding-right: 80px;
+    max-width: 400px;
+    margin-top: 0;
+    line-height: 1.1;
+    font-weight: 600;
+    
+}
+
+.licontainer ul{
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 24px;
+    font-weight: 600;
+    list-style: none;
+    max-width: 326px;
+    
+}
+
+
+.handimgcon{
+    
+    margin-top: 200px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 300px;
+    z-index: 2;
+    transition: .5s;
+    transform-origin: bottom center;
+    top: auto;
+    left: 0;
+    bottom: 0;
+    transform: matrix(2,0,0,2,0,1800);
+   
+}
+
+.hand{
+
+    width: 861px;
+    height: 1158px;
+    background-image: url(https://www.apple.com/v/iphone-13-pro/f/images/overview/camera/truedepth/true_depth__eif6wpphjbki_large_2x.png);
+    background-size:cover;
+}
+
+.secontext{
+    position: absolute;
+    z-index: 1;
+    width: 826px;
+    height: 360px;
+
+    word-break: keep-all;
+    align-items: center;
+    top: 250px;
+    opacity: 0;
+
+    transition: .6s;
+
+}
+.secontext p{
+    font-size: 100px;
+    line-height: 1;
+    font-weight: 600;
+}

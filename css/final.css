@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Slab&display=swap');
+
+html{
+    margin: 0;
+    color: #333;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+   
+    margin: 0;
+    background-color: #dcdcdc;
+}
+
+
+
+
+.searchbar{
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    background-color: #1d1d1f;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+
+ 
+.content{
+    top: 0px;
+    margin: auto;
+    width:682px;
+    height: 239px;
+    background-color: #fff;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(44px);
+}
+
+input{
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: #f5f5f7;
+    height: 100%;
+    border: none;
+    
+}
+
+
+
+input::-ms-clear,
+input::-ms-reveal{
+    display:none;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+    display:none;
+}
+
+.content.open{
+    margin: auto;
+    top: 0px;
+    transform: translateY(44px);
+    width:682px;
+    height: 239px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 7;
+    opacity: 1;
+    transition: 0.5s;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+   
+}
+
+.content section{
+    margin: 0px 40px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+section p{
+    font-size: 14px;
+   
+}
+
+.link2{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.link2 a{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 28px;
+    transform: translateX(400px);
+    text-decoration: none;
+    text-align: left;
+    align-items: center;
+    color: #1d1d1f;
+
+}
+
+.gray{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000030;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+.gray.open{
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000080;
+    opacity: 1;
+    padding-top: 100px;
+    position: absolute;
+    z-index: 6;
+    transition: 0.6s;
+}
+
+.link2 a:hover{
+    font-size: 12px;
+
+    width: 100%;
+    height: 28px;
+
+    text-decoration: none;
+    text-align: left;
+    align-items: center;
+    color: #06c;
+    background-color: rgb(219, 219, 219);
+}
+
+
+.container{
+    position: absolute;
+    width: 700px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.searchname{
+    width: 682px;
+    height: 44px;
+}
+
+
+.close{
+    width: 18px;
+}
+
+.close a{
+
+    color: #f5f5f7;
+    opacity: 0.7;
+    text-decoration: none;
+    
+}
+
+.close a:hover{
+
+    color: #f5f5f7;
+    opacity: 1;
+    text-decoration: none;
+    
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 996px;
+    margin: 0;
+    align-items: center;
+    font-size: 14px;
+    padding: 0px 22px;
+    margin: auto;
+    font-weight: 600;
+   
+ 
+}
+
+ul .id{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+    opacity: 0.8;
+    height: 44px;
+    overflow: hidden;
+   
+}
+
+ul .ic{
+    display: flex;
+    text-align: center;
+    color: #333333;
+    text-decoration: none;
+    opacity: 0.8;
+    height: 44px;
+    overflow: hidden;
+
+}
+
+ul a:hover{
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    opacity:1;
+}
+
+
+
+
+.bg2{
+
+    width: 16px;
+    height: 44px;
+    padding: 0px 10px;
+    overflow: hidden;
+
+}
+
+.bg2 img{
+
+    width: 16px;
+    height: 88px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.text{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.MainText{
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.smallh1{
+    text-align: center;
+    font-size: 20px;
+    max-width: 400px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h1{
+    margin-top: 0;
+    text-align: center;
+    font-size: 96px;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+.link{
+    margin-bottom: 40px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link a{
+    text-decoration: none;
+    color: #0066CC;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.link a:hover{
+    text-decoration: underline;
+}
+
+.mainsec{
+
+    width: 100%;
+    height: 5000px;
+}
+
+.main{
+    position: relative;
+    top: 64px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f5f5f7;
+}
+
+.ntbcon{
+    margin-top: 200px;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: .4s;
+    transform-origin: center top;
+    top: auto;
+ 
+    top: 0;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+.ntbcon1{
+    
+    position: absolute;
+    z-index: 2;
+}
+
+
+.ntbcon2{
+    
+    position: absolute;
+    z-index: 1;
+}
+
+.ntbcon3{
+    
+    position: absolute;
+    z-index: 3;
+}
+
+
+.ntb1{
+    width: 600px;
+    height: 600px;
+
+    background-image: url(../Image/11.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+}
+
+.ntb2{
+    width: 600px;
+    height: 600px;
+    background-image: url(../Image/22.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+}
+
+.ntb3{
+    width: 600px;
+    height: 600px;
+    background-image: url(../Image/33.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* position: absolute; */
+}
+
+
+
+
+
+.parallax{
+
+    width: 100%;
+    height:800px;
+
+    background: url(../Image/parallax.png) center center;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: 1s;
+}
